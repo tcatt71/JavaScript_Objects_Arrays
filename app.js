@@ -26,7 +26,6 @@ function arraySum(numbers) {
   let sum = 0;
   numbers.forEach(function (value) {
     sum += value;
-    
   });
   return sum;
 }
