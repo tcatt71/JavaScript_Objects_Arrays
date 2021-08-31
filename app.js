@@ -36,4 +36,24 @@ console.log(arraySum(numbers));
 // Exercise 2 Section
 console.log("EXERCISE 2:\n==========\n");
 
+// Exercise 2: Favorite Book
+// Write a “Book” object. Your book object should have the book’s title, author, the number of pages, and whether or not you have read the book
+// Declare a variable named book, and assign an object ({}) to the variable.
+// Using dot notation:
+// assign the title of your favorite book to a property named title,
+// assign the number of pages to a property named pages,
+// and assign the number of times you've read the book to a property named readCount
+// Using dot notation, add a method named info to the book object that returns a string that combines the title, pages, and readCount as an informational string. Ex: The Hobbit by J.R.R Tolkien, 295 pages, read 3 times.
+// After you have added the properties and method to the object, call the book.info() method inside console.log to print out the returned string.
 
+const book = {};
+
+book.title = 'Awesome Book';
+book.pages = 500;
+book.readCount = 2;
+
+book.info = function () {
+  return `${this.title}, ${this.pages} pages, read ${this.readCount} times.`;
+};
+
+console.log(book.info());
